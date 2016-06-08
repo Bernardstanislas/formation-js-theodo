@@ -1,0 +1,9 @@
+machine:
+  node:
+    version: 6.2.1
+test:
+  override:
+    - cd client && npm test
+dependencies:
+  override:
+    - cd client && npm i && cd ../server && npm i
