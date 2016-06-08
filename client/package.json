@@ -8,7 +8,8 @@
     "compile:watch": "webpack -w",
     "test": "mocha --compilers js:babel-register test/*.js",
     "test:watch": "mocha -w --compilers js:babel-register test/*.js",
-    "server:start": "cd ../server && npm run start"
+    "server:start": "cd ../server && npm run start",
+    "postinstall": "bower install"
   },
   "babel": {
     "presets": [
