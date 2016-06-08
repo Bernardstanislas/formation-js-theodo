@@ -1,0 +1,11 @@
+{
+  "name": "todo-list",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-resource": "^1.5.6"
+  }
+}

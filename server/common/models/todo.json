@@ -1,0 +1,27 @@
+{
+  "name": "todo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "task": {
+      "type": "string",
+      "required": true
+    },
+    "priority": {
+      "type": "number",
+      "required": true
+    },
+    "checked": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

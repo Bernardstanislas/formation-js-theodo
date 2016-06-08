@@ -1,0 +1,16 @@
+doctype html
+html(ng-app="todo-list")
+  head
+    meta(charset="utf-8")
+    title TODO List
+  body(ng-controller="TodoListController")
+    h1 {{ title }}
+    input(ng-model="query")
+    button(ng-click="addItem()") Add item
+    div(ng-repeat="todo in todos")
+      b {{ todo.priority }} :
+      span(ng-click="modifyItem(todo)") {{ todo.task }}
+      a(ng-click="removeItem(todo.id)")  X
+    script(src="assets/angular/angular.js")
+    script(src="assets/angular-resource/angular-resource.js")
+    script(src="app.js")
